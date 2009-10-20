@@ -1,0 +1,22 @@
+--- origsrc/SystemTrayN/AppRun	2007-07-21 06:37:23.000000000 -0500
++++ src/SystemTrayN/AppRun	2009-10-20 01:50:52.014804300 -0500
+@@ -5,6 +5,8 @@ PROG=SystemTray
+ APP_DIR=`dirname $0`
+ APP_DIR=`cd "$APP_DIR";pwd`; export APP_DIR
+ 
++export PLATFORM="CYGWIN-ix86"
++
+ if [ "x$MAKE" = x ]; then
+   MAKE=make export MAKE
+ fi
+--- origsrc/SystemTrayN/AppletRun	2006-01-21 08:57:22.000000000 -0600
++++ src/SystemTrayN/AppletRun	2009-10-20 01:50:55.564809200 -0500
+@@ -5,6 +5,8 @@ PROG=SystemTray
+ APP_DIR=`dirname $0`
+ APP_DIR=`cd "$APP_DIR";pwd`; export APP_DIR
+ 
++export PLATFORM="CYGWIN-ix86"
++
+ if [ "x$MAKE" = x ]; then
+   MAKE=make export MAKE
+ fi
